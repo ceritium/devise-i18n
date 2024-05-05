@@ -28,7 +28,7 @@ es:
         updated_at: Actualizado en
     models:
       user:
-        one: Usuario
+        one: Super Usuario
         other: Usuarios
   devise:
     confirmations:
