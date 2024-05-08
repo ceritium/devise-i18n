@@ -2,7 +2,7 @@ en:
   activerecord:
     attributes:
       user:
-        confirmation_sent_at: Confirmation sent at
+        confirmation_sent_at: Confirmation sent at 2
         confirmation_token: Confirmation token
         confirmed_at: Confirmed at
         created_at: Created at
