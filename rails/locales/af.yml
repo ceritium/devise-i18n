@@ -1,35 +1,24 @@
 ---
 af:
-  activerecord:
-    attributes:
-      user:
-        email: E-pos 2
-        encrypted_password:
-        failed_attempts:
-        last_sign_in_at:
-        last_sign_in_ip:
-        locked_at:
-        password: Wagwoord
-        confirmation_sent_at:
-        confirmation_token:
-        confirmed_at:
-        created_at:
-        current_password: Huidige wagwoord
-        current_sign_in_at:
-        current_sign_in_ip:
-        password_confirmation: Wagwoord bevestiging
-        remember_created_at:
-        remember_me: Onthou my
-        reset_password_sent_at:
-        reset_password_token: Herstel wagwoord egtheidsbewys
-        sign_in_count:
-        unconfirmed_email:
-        unlock_token: Ontsluit egtheidsbewys
-        updated_at:
-    models:
-      user:
-        one: lol 2
   devise:
+    shared:
+      links:
+        didn_t_receive_unlock_instructions: Het nie ontsluitingsinstruksies ontvang
+          nie?
+        forgot_your_password: Jou wagwoord vergeet?
+        sign_in: Teken aan
+        sign_in_with_provider: Teken aan met %{provider}
+        sign_up: Teken in
+        back: Terug
+        didn_t_receive_confirmation_instructions: Nie bevestigingsinstruksies ontvang
+          nie?
+      minimum_password_length:
+    sessions:
+      signed_out: Suksesvol afgeteken.
+      already_signed_out: Suksesvol uitgeteken.
+      new:
+        sign_in: Teken aan
+      signed_in: Suksesvol aangeteken.
     mailer:
       reset_password_instructions:
         greeting: Hallo %{recipient}!
@@ -134,24 +123,6 @@ af:
         sal jy 'n wagwoordherstelskakel by jou e-posadres ontvang binne 'n paar minute.
       updated: Jou wagwoord was suksesvol gewysig. Jy is nou ingeteken.
       updated_not_active: Jou wagwoord was suksesvol gewysig.
-    sessions:
-      already_signed_out: Suksesvol uitgeteken.
-      new:
-        sign_in: Teken aan
-      signed_in: Suksesvol aangeteken.
-      signed_out: Suksesvol afgeteken.
-    shared:
-      links:
-        back: Terug
-        didn_t_receive_confirmation_instructions: Nie bevestigingsinstruksies ontvang
-          nie?
-        didn_t_receive_unlock_instructions: Het nie ontsluitingsinstruksies ontvang
-          nie?
-        forgot_your_password: Jou wagwoord vergeet?
-        sign_in: Teken aan
-        sign_in_with_provider: Teken aan met %{provider}
-        sign_up: Teken in
-      minimum_password_length:
     unlocks:
       new:
         resend_unlock_instructions: Stuur weer ontsluitingsinstruksies
@@ -161,6 +132,35 @@ af:
         met instruksies vir hoe om dit te ontsluit oor 'n paar minute.
       unlocked: Jou rekening was suksesvol ontsluit. Teken asseblief aan om voort
         te gaan.
+  activerecord:
+    attributes:
+      user:
+        email: E-pos 2
+        encrypted_password:
+        failed_attempts:
+        last_sign_in_at:
+        last_sign_in_ip:
+        locked_at:
+        password: Wagwoord
+        confirmation_sent_at:
+        confirmation_token:
+        confirmed_at:
+        created_at:
+        current_password: Huidige wagwoord
+        current_sign_in_at:
+        current_sign_in_ip:
+        password_confirmation: Wagwoord bevestiging
+        remember_created_at:
+        remember_me: Onthou my
+        reset_password_sent_at:
+        reset_password_token: Herstel wagwoord egtheidsbewys
+        sign_in_count:
+        unconfirmed_email:
+        unlock_token: Ontsluit egtheidsbewys
+        updated_at:
+    models:
+      user:
+        one: lol 3
   errors:
     messages:
       already_confirmed: was alreeds bevestig, probeer inteken
