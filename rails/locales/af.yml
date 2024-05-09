@@ -28,7 +28,7 @@ af:
         updated_at:
     models:
       user:
-        one: lol
+        one: lol 2
   devise:
     mailer:
       reset_password_instructions:
