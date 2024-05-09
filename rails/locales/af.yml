@@ -70,7 +70,8 @@ af:
       edit:
         are_you_sure: Is jy seker?
         cancel_my_account: Kanselleer my rekening
-        currently_waiting_confirmation_for_email: 'Wag tans bevestiging vir: %{email}'
+        currently_waiting_confirmation_for_email: 'Wag tans bevestiging vir: %{email}
+          2'
         leave_blank_if_you_don_t_want_to_change_it: los skoon indien jy dit nie wil
           verander nie
         title: Wysig %{resource}
