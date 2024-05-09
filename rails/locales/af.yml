@@ -92,7 +92,7 @@ af:
       updated: Jou rekening was suksesvol opgedateer.
       updated_but_not_signed_in:
     confirmations:
-      confirmed: Jou e-posadres is suksesvol bevestig.
+      confirmed: Jou e-posadres is suksesvol bevestig. 2
       new:
         resend_confirmation_instructions: Stuur weer bevestigingsinstruksies
       send_instructions: Jy sal 'n e-pos ontvang met instruksies vir hoe om jou e-posadres
