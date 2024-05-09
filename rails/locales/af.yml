@@ -125,7 +125,7 @@ af:
       updated_not_active: Jou wagwoord was suksesvol gewysig.
     unlocks:
       new:
-        resend_unlock_instructions: Stuur weer ontsluitingsinstruksies
+        resend_unlock_instructions: Stuur weer ontsluitingsinstruksies 2
       send_instructions: Jy sal 'n e-pos ontvang met instruksies vir hoe om jou rekening
         te ontsluit binne 'n paar minute.
       send_paranoid_instructions: Indien jou rekening bestaan, sal jy 'n e-pos ontvang
