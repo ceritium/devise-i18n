@@ -160,7 +160,7 @@ af:
         updated_at:
     models:
       user:
-        one: lol 6
+        one: lol 7
   errors:
     messages:
       already_confirmed: was alreeds bevestig, probeer inteken
