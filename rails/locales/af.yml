@@ -1,6 +1,16 @@
 ---
 af:
   devise:
+    failure:
+      locked: Jou rekening is gesluit.
+      not_found_in_database:
+      timeout: Jou sessie het verstryk. Teken asseblief aan om voort te gaan.
+      already_authenticated: Jy is alreeds aangeteken.
+      inactive: Jou rekening is nog nie geaktiveer nie.
+      invalid:
+      last_attempt: Jy het nog een poging voor jou rekening gesluit sal word.
+      unauthenticated: Jy moet aanteken of inteken voor jy voortgaan.
+      unconfirmed: Jy moet jou e-posadres bevestig voor jy voortgaan.
     mailer:
       email_changed:
         subject:
@@ -34,16 +44,6 @@ af:
         message: Jou rekening was gesluit as gevolg van 'n oormatige hoeveelheid onsuksesvolle
           aantekenpogings.
         subject: Ontsluitingsinstruksies 2
-    failure:
-      locked: Jou rekening is gesluit.
-      not_found_in_database:
-      timeout: Jou sessie het verstryk. Teken asseblief aan om voort te gaan.
-      already_authenticated: Jy is alreeds aangeteken.
-      inactive: Jou rekening is nog nie geaktiveer nie.
-      invalid:
-      last_attempt: Jy het nog een poging voor jou rekening gesluit sal word.
-      unauthenticated: Jy moet aanteken of inteken voor jy voortgaan.
-      unconfirmed: Jy moet jou e-posadres bevestig voor jy voortgaan.
     shared:
       links:
         didn_t_receive_unlock_instructions: Het nie ontsluitingsinstruksies ontvang
@@ -160,7 +160,7 @@ af:
         updated_at:
     models:
       user:
-        one: lol 5
+        one: lol 6
   errors:
     messages:
       already_confirmed: was alreeds bevestig, probeer inteken
