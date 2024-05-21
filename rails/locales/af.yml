@@ -1,11 +1,44 @@
 ---
 af:
   devise:
+    mailer:
+      reset_password_instructions:
+        instruction_3: Jou wagwoord sal nie verander totdat jy die skakel hierbo besoek
+          en 'n nuwe een skep nie.
+        subject: Herstel wagwoord instruksies
+        instruction_2: As jy nie hierdie versoek het nie, ignoreer asseblief hierdie
+          e-pos.
+        greeting: Hallo %{recipient}!
+        action: Verander my wagwoord
+        instruction: Iemand het 'n skakel versoek om jou wagwoord te verander, en
+          jy kan dit doen deur die onderstaande skakel.
+      confirmation_instructions:
+        action: Bevestig my rekening
+        greeting: Welkom %{recipient}!
+        instruction: 'Jy kan jou rekening e-pos bevestig deur die onderstaande skakel:'
+        subject: Bevestigingsinstruksies
+      unlock_instructions:
+        action: Ontsluit my rekening
+        greeting: Hallo %{recipient}!
+        instruction: 'Klik op die onderstaande skakel om jou rekening te ontsluit:'
+        message: Jou rekening was gesluit as gevolg van 'n oormatige hoeveelheid onsuksesvolle
+          aantekenpogings.
+        subject: Ontsluitingsinstruksies 2
+      email_changed:
+        subject:
+        greeting:
+        message:
+        message_unconfirmed:
+      password_change:
+        greeting: Hallo %{recipient}!
+        message: Ons kontak jou om jou in kennis te stel dat jou wagwoord verander
+          is.
+        subject: Wagwoord Verander
     passwords:
       new:
+        forgot_your_password: Jou wagwoord vergeet?
         send_me_reset_password_instructions: Stuur wagwoordherstelinstruksies aan
           my
-        forgot_your_password: Jou wagwoord vergeet?
       no_token: Jy kan nie toegang tot hierdie bladsy kry sonder dat jy afkomstig
         van 'n wagwoord herstel e-pos is nie. Indien jy wel van 'n wagwoord herstel
         e-pos kom, maak asseblief seker dat jy die volle verskafde bronadres gebruik
@@ -21,6 +54,18 @@ af:
         change_your_password: Verander jou wagwoord
         confirm_new_password: Bevestig nuwe wagwoord
         new_password: Nuwe wagwoord
+    shared:
+      links:
+        didn_t_receive_unlock_instructions: Het nie ontsluitingsinstruksies ontvang
+          nie?
+        didn_t_receive_confirmation_instructions: Nie bevestigingsinstruksies ontvang
+          nie?
+        sign_in: Teken aan
+        sign_in_with_provider: Teken aan met %{provider}
+        sign_up: Teken in
+        back: Terug
+        forgot_your_password: Jou wagwoord vergeet?
+      minimum_password_length:
     unlocks:
       new:
         resend_unlock_instructions: Stuur weer ontsluitingsinstruksies 2
@@ -40,18 +85,6 @@ af:
       last_attempt: Jy het nog een poging voor jou rekening gesluit sal word.
       unauthenticated: Jy moet aanteken of inteken voor jy voortgaan.
       unconfirmed: Jy moet jou e-posadres bevestig voor jy voortgaan.
-    shared:
-      links:
-        didn_t_receive_confirmation_instructions: Nie bevestigingsinstruksies ontvang
-          nie?
-        didn_t_receive_unlock_instructions: Het nie ontsluitingsinstruksies ontvang
-          nie?
-        forgot_your_password: Jou wagwoord vergeet?
-        sign_in: Teken aan
-        sign_in_with_provider: Teken aan met %{provider}
-        sign_up: Teken in
-        back: Terug
-      minimum_password_length:
     sessions:
       signed_out: Suksesvol afgeteken.
       already_signed_out: Suksesvol uitgeteken.
@@ -74,8 +107,6 @@ af:
         update: Opdateer
         we_need_your_current_password_to_confirm_your_changes: ons benodig jou huidige
           wagwoord om jou veranderinge te bevestig
-      new:
-        sign_up: Teken in
       signed_up_but_inactive: Jy het suksesvol ingeteken. Ons kon jou wel nie inteken
         nie omdat jou rekening nog nie geaktiveer is nie.
       signed_up_but_locked: Jy het suksesvol ingeteken. Ons kon jou wel nie inteken
@@ -87,6 +118,8 @@ af:
         volg die bevestigingsskakel om jou nuwe e-posadres te bevestig.
       updated: Jou rekening was suksesvol opgedateer.
       updated_but_not_signed_in:
+      new:
+        sign_up: Teken in
     confirmations:
       confirmed: Jou e-posadres is suksesvol bevestig. 2
       new:
@@ -99,39 +132,6 @@ af:
     omniauth_callbacks:
       failure: Kon jou nie waarmerk vanaf %{kind} nie oor "%{reason}".
       success: Suksesvol gewaarmerk vanaf %{kind} rekening.
-    mailer:
-      email_changed:
-        subject:
-        greeting:
-        message:
-        message_unconfirmed:
-      password_change:
-        greeting: Hallo %{recipient}!
-        message: Ons kontak jou om jou in kennis te stel dat jou wagwoord verander
-          is.
-        subject: Wagwoord Verander
-      reset_password_instructions:
-        greeting: Hallo %{recipient}!
-        action: Verander my wagwoord
-        instruction: Iemand het 'n skakel versoek om jou wagwoord te verander, en
-          jy kan dit doen deur die onderstaande skakel.
-        instruction_2: As jy nie hierdie versoek het nie, ignoreer asseblief hierdie
-          e-pos.
-        instruction_3: Jou wagwoord sal nie verander totdat jy die skakel hierbo besoek
-          en 'n nuwe een skep nie.
-        subject: Herstel wagwoord instruksies
-      confirmation_instructions:
-        action: Bevestig my rekening
-        greeting: Welkom %{recipient}!
-        instruction: 'Jy kan jou rekening e-pos bevestig deur die onderstaande skakel:'
-        subject: Bevestigingsinstruksies
-      unlock_instructions:
-        action: Ontsluit my rekening
-        greeting: Hallo %{recipient}!
-        instruction: 'Klik op die onderstaande skakel om jou rekening te ontsluit:'
-        message: Jou rekening was gesluit as gevolg van 'n oormatige hoeveelheid onsuksesvolle
-          aantekenpogings.
-        subject: Ontsluitingsinstruksies 2
   errors:
     messages:
       not_saved:
@@ -171,4 +171,4 @@ af:
         updated_at:
     models:
       user:
-        one: lol 8
+        one: lol 9
