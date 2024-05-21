@@ -132,6 +132,17 @@ af:
         met instruksies vir hoe om dit te ontsluit oor 'n paar minute.
       unlocked: Jou rekening was suksesvol ontsluit. Teken asseblief aan om voort
         te gaan.
+  errors:
+    messages:
+      not_saved:
+        one: '1 fout het verhoed dat hierdie %{resource} gestoor word:'
+        other: "%{count} foute het verhoed dat hierdie %{resource} gestoor word:"
+      already_confirmed: was alreeds bevestig, probeer inteken
+      confirmation_period_expired: moet bevestig word binne %{period}, versoek asseblief
+        'n nuwe een
+      expired: het verstryk, versoek asseblief 'n nuwe een
+      not_found: nie gevind nie
+      not_locked: was nie gesluit nie
   activerecord:
     attributes:
       user:
@@ -160,15 +171,4 @@ af:
         updated_at:
     models:
       user:
-        one: lol 7
-  errors:
-    messages:
-      already_confirmed: was alreeds bevestig, probeer inteken
-      confirmation_period_expired: moet bevestig word binne %{period}, versoek asseblief
-        'n nuwe een
-      expired: het verstryk, versoek asseblief 'n nuwe een
-      not_found: nie gevind nie
-      not_locked: was nie gesluit nie
-      not_saved:
-        one: '1 fout het verhoed dat hierdie %{resource} gestoor word:'
-        other: "%{count} foute het verhoed dat hierdie %{resource} gestoor word:"
+        one: lol 8
