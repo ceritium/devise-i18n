@@ -156,7 +156,7 @@ af:
         last_sign_in_ip:
         locked_at:
         password: Wagwoord
-        confirmation_sent_at:
+        confirmation_sent_at: '1'
         confirmation_token:
         confirmed_at:
         created_at:
@@ -171,4 +171,4 @@ af:
         updated_at:
     models:
       user:
-        one: lol 10
+        one: lol 11
