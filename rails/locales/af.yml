@@ -1,9 +1,38 @@
 ---
 af:
   devise:
+    passwords:
+      new:
+        send_me_reset_password_instructions: Stuur wagwoordherstelinstruksies aan
+          my
+        forgot_your_password: Jou wagwoord vergeet?
+      no_token: Jy kan nie toegang tot hierdie bladsy kry sonder dat jy afkomstig
+        van 'n wagwoord herstel e-pos is nie. Indien jy wel van 'n wagwoord herstel
+        e-pos kom, maak asseblief seker dat jy die volle verskafde bronadres gebruik
+        het.
+      send_instructions: Jy sal 'n e-pos ontvang met instruksies oor hoe om jou wagwoord
+        te herstel oor 'n paar minute.
+      send_paranoid_instructions: Indien jou e-posadres in ons databasis bestaan,
+        sal jy 'n wagwoordherstelskakel by jou e-posadres ontvang binne 'n paar minute.
+      updated: Jou wagwoord was suksesvol gewysig. Jy is nou ingeteken.
+      updated_not_active: Jou wagwoord was suksesvol gewysig.
+      edit:
+        change_my_password: Verander my wagwoord
+        change_your_password: Verander jou wagwoord
+        confirm_new_password: Bevestig nuwe wagwoord
+        new_password: Nuwe wagwoord
+    unlocks:
+      new:
+        resend_unlock_instructions: Stuur weer ontsluitingsinstruksies 2
+      send_instructions: Jy sal 'n e-pos ontvang met instruksies vir hoe om jou rekening
+        te ontsluit binne 'n paar minute.
+      send_paranoid_instructions: Indien jou rekening bestaan, sal jy 'n e-pos ontvang
+        met instruksies vir hoe om dit te ontsluit oor 'n paar minute.
+      unlocked: Jou rekening was suksesvol ontsluit. Teken asseblief aan om voort
+        te gaan.
     failure:
-      locked: Jou rekening is gesluit.
       not_found_in_database:
+      locked: Jou rekening is gesluit.
       timeout: Jou sessie het verstryk. Teken asseblief aan om voort te gaan.
       already_authenticated: Jy is alreeds aangeteken.
       inactive: Jou rekening is nog nie geaktiveer nie.
@@ -11,41 +40,10 @@ af:
       last_attempt: Jy het nog een poging voor jou rekening gesluit sal word.
       unauthenticated: Jy moet aanteken of inteken voor jy voortgaan.
       unconfirmed: Jy moet jou e-posadres bevestig voor jy voortgaan.
-    mailer:
-      email_changed:
-        subject:
-        greeting:
-        message:
-        message_unconfirmed:
-      password_change:
-        greeting: Hallo %{recipient}!
-        message: Ons kontak jou om jou in kennis te stel dat jou wagwoord verander
-          is.
-        subject: Wagwoord Verander
-      reset_password_instructions:
-        greeting: Hallo %{recipient}!
-        action: Verander my wagwoord
-        instruction: Iemand het 'n skakel versoek om jou wagwoord te verander, en
-          jy kan dit doen deur die onderstaande skakel.
-        instruction_2: As jy nie hierdie versoek het nie, ignoreer asseblief hierdie
-          e-pos.
-        instruction_3: Jou wagwoord sal nie verander totdat jy die skakel hierbo besoek
-          en 'n nuwe een skep nie.
-        subject: Herstel wagwoord instruksies
-      confirmation_instructions:
-        action: Bevestig my rekening
-        greeting: Welkom %{recipient}!
-        instruction: 'Jy kan jou rekening e-pos bevestig deur die onderstaande skakel:'
-        subject: Bevestigingsinstruksies
-      unlock_instructions:
-        action: Ontsluit my rekening
-        greeting: Hallo %{recipient}!
-        instruction: 'Klik op die onderstaande skakel om jou rekening te ontsluit:'
-        message: Jou rekening was gesluit as gevolg van 'n oormatige hoeveelheid onsuksesvolle
-          aantekenpogings.
-        subject: Ontsluitingsinstruksies 2
     shared:
       links:
+        didn_t_receive_confirmation_instructions: Nie bevestigingsinstruksies ontvang
+          nie?
         didn_t_receive_unlock_instructions: Het nie ontsluitingsinstruksies ontvang
           nie?
         forgot_your_password: Jou wagwoord vergeet?
@@ -53,8 +51,6 @@ af:
         sign_in_with_provider: Teken aan met %{provider}
         sign_up: Teken in
         back: Terug
-        didn_t_receive_confirmation_instructions: Nie bevestigingsinstruksies ontvang
-          nie?
       minimum_password_length:
     sessions:
       signed_out: Suksesvol afgeteken.
@@ -103,35 +99,39 @@ af:
     omniauth_callbacks:
       failure: Kon jou nie waarmerk vanaf %{kind} nie oor "%{reason}".
       success: Suksesvol gewaarmerk vanaf %{kind} rekening.
-    passwords:
-      edit:
-        change_my_password: Verander my wagwoord
-        change_your_password: Verander jou wagwoord
-        confirm_new_password: Bevestig nuwe wagwoord
-        new_password: Nuwe wagwoord
-      new:
-        forgot_your_password: Jou wagwoord vergeet?
-        send_me_reset_password_instructions: Stuur wagwoordherstelinstruksies aan
-          my
-      no_token: Jy kan nie toegang tot hierdie bladsy kry sonder dat jy afkomstig
-        van 'n wagwoord herstel e-pos is nie. Indien jy wel van 'n wagwoord herstel
-        e-pos kom, maak asseblief seker dat jy die volle verskafde bronadres gebruik
-        het.
-      send_instructions: Jy sal 'n e-pos ontvang met instruksies oor hoe om jou wagwoord
-        te herstel oor 'n paar minute.
-      send_paranoid_instructions: Indien jou e-posadres in ons databasis bestaan,
-        sal jy 'n wagwoordherstelskakel by jou e-posadres ontvang binne 'n paar minute.
-      updated: Jou wagwoord was suksesvol gewysig. Jy is nou ingeteken.
-      updated_not_active: Jou wagwoord was suksesvol gewysig.
-    unlocks:
-      new:
-        resend_unlock_instructions: Stuur weer ontsluitingsinstruksies 2
-      send_instructions: Jy sal 'n e-pos ontvang met instruksies vir hoe om jou rekening
-        te ontsluit binne 'n paar minute.
-      send_paranoid_instructions: Indien jou rekening bestaan, sal jy 'n e-pos ontvang
-        met instruksies vir hoe om dit te ontsluit oor 'n paar minute.
-      unlocked: Jou rekening was suksesvol ontsluit. Teken asseblief aan om voort
-        te gaan.
+    mailer:
+      email_changed:
+        subject:
+        greeting:
+        message:
+        message_unconfirmed:
+      password_change:
+        greeting: Hallo %{recipient}!
+        message: Ons kontak jou om jou in kennis te stel dat jou wagwoord verander
+          is.
+        subject: Wagwoord Verander
+      reset_password_instructions:
+        greeting: Hallo %{recipient}!
+        action: Verander my wagwoord
+        instruction: Iemand het 'n skakel versoek om jou wagwoord te verander, en
+          jy kan dit doen deur die onderstaande skakel.
+        instruction_2: As jy nie hierdie versoek het nie, ignoreer asseblief hierdie
+          e-pos.
+        instruction_3: Jou wagwoord sal nie verander totdat jy die skakel hierbo besoek
+          en 'n nuwe een skep nie.
+        subject: Herstel wagwoord instruksies
+      confirmation_instructions:
+        action: Bevestig my rekening
+        greeting: Welkom %{recipient}!
+        instruction: 'Jy kan jou rekening e-pos bevestig deur die onderstaande skakel:'
+        subject: Bevestigingsinstruksies
+      unlock_instructions:
+        action: Ontsluit my rekening
+        greeting: Hallo %{recipient}!
+        instruction: 'Klik op die onderstaande skakel om jou rekening te ontsluit:'
+        message: Jou rekening was gesluit as gevolg van 'n oormatige hoeveelheid onsuksesvolle
+          aantekenpogings.
+        subject: Ontsluitingsinstruksies 2
   errors:
     messages:
       not_saved:
@@ -149,7 +149,7 @@ af:
         reset_password_sent_at:
         remember_created_at:
         remember_me: Onthou my
-        email: E-pos 2
+        email: E-pos 3
         encrypted_password:
         failed_attempts:
         last_sign_in_at:
